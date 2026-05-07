@@ -4985,6 +4985,7 @@ unsigned long ISSHistogrammer::FillHists() {
 
 		} // gamma hists enabled
 
+		// MWPC position calibration map gated by the summed TAC values
 		// Check Multiplicity
 		if( read_evts->GetMwpcMultiplicity() == 2 ) {
 

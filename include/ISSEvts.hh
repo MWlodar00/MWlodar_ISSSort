@@ -274,7 +274,7 @@ public:
 protected:
 
 	int				tacdiff;	///< TAC differences
-	int				tacsum;		///< TAC differences converted to mm
+	int				tacsum;		///< TAC sums for gating
 	float			pos;		///< calibrated position in mm
 	unsigned char	axis;		///< axis ID, usually just x=0 and y=1
 	double			time;		///< time stamp of the MWPC event

@@ -389,9 +389,8 @@ public:
 		else return FissionCut( f, mycut );
 	};
 	inline bool MwpcTacSumCut( std::shared_ptr<ISSMwpcEvt> m ){
-		if( m->GetTacSum() > react->GetMwpcTacSumWindow( 2 * m->GetAxis() ) &&
-		    m->GetTacSum() < react->GetMwpcTacSumWindow( 2 * m->GetAxis() + 1 ) ) return true;
-		else return false;
+		return ( m->GetTacSum() > react->GetMwpcTacSumWindow( 2 * m->GetAxis() ) &&
+				m->GetTacSum() < react->GetMwpcTacSumWindow( 2 * m->GetAxis() + 1 ) );
 	};
 
 private:

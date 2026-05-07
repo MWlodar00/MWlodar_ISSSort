@@ -125,8 +125,8 @@
 #MWPC_axis_1_TAC_sum.Max: 
 
 ## Recoil cut options
-## For the normal recoil detector (Recoil.Type = 1), you need to give a cut file for each sector (RecoilCut.Method = 1)
-## or define a 1D gate on a particular segment of the detector (RecoilCut.Method = 2); The latter is only applicable for the Bragg chamber
+## For the normal recoil detector (Recoil.Type = 1), you need to give a cut file for each sector (RecoilCut.Graphical = true)
+## or define a 1D gate on a particular segment of the detector (RecoilCut.Graphical = false); The latter is only applicable for the Bragg chamber
 ## For the Fission CD setup, you just need to give information for RecoilCut_0 and it applies to all sectors
 #RecoilCut.Graphical: true
 #RecoilCut_0.File: NULL	# ROOT file containing the 2D recoil energy cut for sector 0
